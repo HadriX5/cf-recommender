@@ -23,7 +23,11 @@ The system includes a suite of analytical tools to explore:
 ### Vectorized Matrix Similarity
 
 The core of the engine uses a highly optimized function to compute user similarities without explicit iteration:
-$$Dist(A, B) = \sqrt{\sum (A_i - B_i)^2}$$
+
+$$
+Dist(A, B) = \sqrt{\sum (A_i - B_i)^2}
+$$
+
 This is implemented via matrix multiplication ($A \cdot A^T$) to ensure scalability even with thousands of users.
 
 ## 📂 Project Structure
